@@ -1,0 +1,8 @@
+groups:
+- name: uptime
+  rules:
+  - record: job:uptime:average:ft
+    expr: avg without (instance) (up{job="foretought"})
+  - alert: ForethoughtApplicationDown
+    expr: job:uptime:average:ft < .75
+    for: 1m
