@@ -11,5 +11,5 @@ for i in range(100):
         'text': fake.text(),
         'timestamp': datetime.now(),
     }
-    resp = es.index(index="test-index", id=i, document=doc)
+    resp = es.index(index="test-inde", id=i, document=doc)
     print(resp['result'])

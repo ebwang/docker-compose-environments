@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+    <h2 class="text-center mb-4">Menu</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+        <a href="/show_all" class="btn btn-primary m-2">Show All Entries</a>
+        <a href="/search" class="btn btn-primary m-2">Search</a>
+        <a href="/add" class="btn btn-primary m-2">Add Entry</a>
+        <a href="/delete" class="btn btn-primary m-2">Delete Entry</a>
+    </div>
+{% endblock %}

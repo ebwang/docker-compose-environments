@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "client-py"
+version = "0.1.0"
+description = ""
+authors = ["Eduardo Wang <eduardo.b.wang@gmail.com>"]
+readme = "README.md"
+packages = [{include = "client_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+elasticsearch = "^8.8.0"
+faker = "^18.10.1"
+flask = "^2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
