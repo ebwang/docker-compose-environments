@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="text-center">
+  <h1>Welcome!</h1>
+</div>
+
+<br>
+
+<form action="/" method="POST">
+  <div class="form-group">
+    <input name="first_name" class="form-control input-lg" type="text" placeholder="Enter first name" required>
+    <input name="last_name" class="form-control input-lg" type="text" placeholder="Enter last name" required>
+  </div>
+  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">
+</form>
+
+<br>
+<hr>
+
+<div>
+  {% for post in posts %}
+    <h4 class="well"><strong>{{post.first_name}} {{post.last_name}} </strong> - <em>{{post.last_update.strftime('%Y-%m-%d')}}</em></h4>
+  {% endfor %}
+</div>
+
+{% endblock %}
