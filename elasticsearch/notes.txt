@@ -1,0 +1,37 @@
+POST /movies/_search?pretty
+{
+  "query": {
+    "query_string": {
+      "query": "Dark"
+    }
+  }
+}
+GET /movies/_doc/1924?pretty
+
+
+POST /movies/_search?pretty
+{
+
+}
+
+
+POST /movies/_update/10000
+{
+  "doc": {
+    "genre": [
+      "Biography",
+      "Commedy"
+    ]
+  }
+}
+
+
+PUT /movies/_doc/10000?pretty
+{
+  "title": "Frank",
+  "genre": "Biography",
+  "year": "1942"
+}
+
+DELETE /movies/_doc/10000?pretty
+
